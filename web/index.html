@@ -1,18 +1,26 @@
 <html>
-<head>
-<script type="text/javascript">
- function time() {
- var time = new Date();
- document.getElementById("time").innerHTML = time.toLocaleTimeString();
- setTimeout("time()", 1000);
- }
- window.onload = time;
- </script>
-
-</head>
-<body >
-<span id="time"></span>
-</body>
+  <style type="text/css">
+ 
+  </style>
+ </head>
+ <body>
+    <div id="times">
+    </div>
+   <script type="text/javascript">
+     function  getD1(){
+         var date=new Date();
+         var d1=date.toLocaleString();
+         var div1=document.getElementById("times");
+         div1.innerHTML =d1;
+ 
+     }
+ 
+     setInterval("getD1();",1000);
+ 
+    </script>
+ 
+ </body>
+</html>
 </html>
 </html>
 <title>小小镜像工作室特别网站</title>
